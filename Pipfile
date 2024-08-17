@@ -9,6 +9,7 @@ djangorestframework = "*"
 redis = "*"
 celery = "*"
 gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 
