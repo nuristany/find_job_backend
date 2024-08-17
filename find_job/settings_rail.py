@@ -6,4 +6,4 @@ from decouple import config
 SECRET_KEY = config('SECRET_KEY')
 
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = ['web-production-262c.up.railway.app']
