@@ -63,7 +63,7 @@ ROOT_URLCONF = 'find_job.urls'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-     "https://66c07fdca07baf49a8ff8030--jobsportalfront.netlify.app",
+    "https://main--jobsportalfront.netlify.app",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
