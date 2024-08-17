@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
     'django.contrib.staticfiles',
     'corsheaders',
+    'rest_framework_simplejwt',
     'rest_framework',
     'djoser',
     'core',
