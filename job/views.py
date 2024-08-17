@@ -9,7 +9,7 @@ from .serializers import JobSerializer
 class JobViewSet(viewsets.ModelViewSet):
     queryset = Job.objects.all()
     serializer_class = JobSerializer
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     @action(detail=True, methods=['get'], url_path='result')
     def result(self, request, pk=None):

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     "whitenoise.runserver_nostatic",
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'djoser',
     'core',
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -56,6 +58,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'find_job.urls'
+
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
 
 TEMPLATES = [
     {
